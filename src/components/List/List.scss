@@ -1,0 +1,100 @@
+.list {
+  $self: &;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &__add-button {
+    opacity: 0.5;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+  }
+
+  &__remove-btn {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.15px;
+    cursor: pointer;
+    padding: 10px 12px;
+    transition: background-color 0.3s;
+
+    span {
+      flex: 1;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    &:hover #{$self}__remove-btn {
+      opacity: 0.2;
+      visibility: visible;
+      transition: opacity 0.3s, visibility 0.3s;
+    }
+
+    #{$self}__remove-btn {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s, visibility 0.3s;
+
+      &:hover {
+        opacity: 0.8;
+        visibility: visible;
+        transition: opacity 0.3s, visibility 0.3s;
+      }
+    }
+
+    &:hover {
+      transition: background-color 0.3s;
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    #{$self} {
+      .remove {
+        opacity: 0;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .badge {
+      position: relative;
+      left: 5px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+
+    &.active {
+      background: #ffffff;
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.04);
+      border-radius: 4px;
+    }
+
+    i {
+      margin-right: 8px;
+      display: inline-flex;
+      svg {
+        fill: #7c7c7c;
+      }
+    }
+  }
+}

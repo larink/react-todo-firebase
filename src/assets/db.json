@@ -1,0 +1,98 @@
+{
+  "lists": [
+    {
+      "id": 3,
+      "name": "Фильмы и сериалы",
+      "colorId": 3
+    },
+    {
+      "id": 4,
+      "name": "Книги",
+      "colorId": 2
+    },
+    {
+      "id": 5,
+      "name": "Личное",
+      "colorId": 1
+    },
+    {
+      "name": "Арина228",
+      "colorId": 4,
+      "id": 7
+    }
+  ],
+  "tasks": [
+    {
+      "listId": 4,
+      "text": "Купить 1984!",
+      "completed": true,
+      "id": 10
+    },
+    {
+      "listId": 5,
+      "text": "432432",
+      "completed": false,
+      "id": 11
+    },
+    {
+      "listId": 3,
+      "text": "222",
+      "completed": true,
+      "id": 15
+    },
+    {
+      "listId": 7,
+      "text": "test32222",
+      "completed": true,
+      "id": 16
+    },
+    {
+      "listId": 4,
+      "text": "fdsafds",
+      "completed": false,
+      "id": 17
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "hex": "#C9D1D3",
+      "name": "grey"
+    },
+    {
+      "id": 2,
+      "hex": "#42B883",
+      "name": "green"
+    },
+    {
+      "id": 3,
+      "hex": "#64C4ED",
+      "name": "blue"
+    },
+    {
+      "id": 4,
+      "hex": "#FFBBCC",
+      "name": "pink"
+    },
+    {
+      "id": 5,
+      "hex": "#B6E6BD",
+      "name": "lime"
+    },
+    {
+      "id": 6,
+      "hex": "#C355F5",
+      "name": "purple"
+    },
+    {
+      "id": 7,
+      "hex": "#110133",
+      "name": "black"
+    },
+    {
+      "id": 8,
+      "hex": "#FF6464",
+      "name": "red"
+    }
+  ]
+}
